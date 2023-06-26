@@ -1,0 +1,23 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity FSM_Fibonacci is
+  port (
+    clk, rst   :   in   std_logic;
+    display    :   in   std_logic_vector(0 to 41)
+  ) ;
+end FSM_Fibonacci;
+
+architecture fsm of FSM_Fibonacci is
+    type    estado is (A, B, C, D); 
+    signal  estado_atual, estado_futuro  :   estado;
+    signal fibo0  : integer :=0;
+    signal fibo1  : integer :=1;
+    signal fibo2  : integer :=0;
+    signal disp1value, disp2value, disp3value, disp4value, disp5value, disp6value : integer;
+begin
+    conv : entity work.binToDec(rtl) port map(fibo2, disp1value, disp2value, disp3value, disp4value, disp5value, disp6value);
+
+    
+
+end fsm ; -- fsm

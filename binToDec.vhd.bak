@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity binToDec is
+  port (
+    binData   :   in   integer;
+    decData1, decData2, decData3, decData4, decData5, decData6 :   out  integer
+  ) ;
+end binToDec;
+
+architecture rtl of binToDec is
+begin
+    decData6 := binData/(10^5);
+    decData5 := binData/(10^4)-decData6*(10^1);
+    decData4 := binData/(10^3)-decData6*(10^2)-decData5*(10^1);
+    decData3 := binData/(10^2)-decData6*(10^3)-decData5*(10^2)-decData4*(10^1);
+    decData2 := binData/(10^1)-decData6*(10^4)-decData5*(10^3)-decData4*(10^2)-decData3*(10^1);
+    decData1 := binData       -decData6*(10^5)-decData5*(10^4)-decData4*(10^3)-decData3*(10^2)-decData2*(10^1);
+
+end architecture;

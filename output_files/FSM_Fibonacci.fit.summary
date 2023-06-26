@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Jun 26 11:13:17 2023
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : FSM_Fibonacci
+Top-level Entity Name : FSM_Fibonacci
+Family : MAX 10
+Device : 10M50DAF484C6GES
+Timing Models : Preliminary
+Total logic elements : 3,861 / 49,760 ( 8 % )
+    Total combinational functions : 3,859 / 49,760 ( 8 % )
+    Dedicated logic registers : 133 / 49,760 ( < 1 % )
+Total registers : 133
+Total pins : 44 / 360 ( 12 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
